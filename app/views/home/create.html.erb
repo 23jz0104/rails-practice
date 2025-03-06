@@ -1,1 +1,6 @@
 <h1>Create Todo</h1>
+<%=  link_to("一覧", "/") %>
+<%= form_tag("/register") do %>
+    <input type="text" name="content">
+    <button type="submit">追加</button>
+<% end %>

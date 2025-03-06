@@ -1,8 +1,5 @@
 <h1>ToDo</h1>
-<%= form_tag() do %>
-    <input type="text" name="content">
-    <button type="submit">追加</button>
-<% end %>
+<%=  link_to("作成", "/create") %>
 <% @todos.each do |todo| %>
     <%= todo.content %>
 <% end %>

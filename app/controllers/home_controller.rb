@@ -5,4 +5,10 @@ class HomeController < ApplicationController
 
   def create
   end
+
+  def register
+    todo = Todo.new(content:params[:content])
+    todo.save
+    redirect_to("/")
+  end
 end
