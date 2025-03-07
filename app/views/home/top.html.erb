@@ -1,5 +1,7 @@
 <h1>ToDo List</h1>
 <%=  link_to("作成", "/create") %>
 <% @todos.each do |todo| %>
-    <%= todo.content %>
+    <div>
+        <input type="checkbox"><%= todo.content %>
+    </div>
 <% end %>
